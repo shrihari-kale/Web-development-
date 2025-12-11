@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhava - Movie Webpage</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav a{
+            margin-right: 15px;
+        }
+        section{
+            margin-top: 20px;
+        }
+        aside{
+            background: #f2f2f2;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer{
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Chhava</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#actor" id="nav-actor">Actors</a>
+        <a href="#quote" id="nav-quote">Quotes</a>
+    </nav>
+
+    <!-- Summary Section -->
+    <summary>
+        <p>
+            “Chhava” is a historical film based on the life, courage, and sacrifices of 
+            Chhatrapati Sambhaji Maharaj. It highlights his leadership, loyalty, and warrior spirit.
+        </p>
+    </summary>
+
+    <!-- Actors Section -->
+    <section id="actor">
+        <h2>Main Actors</h2>
+        <ul>
+            <li>Lead Actor:Vicky Kaushal</li>
+            <li>Supporting Actor: Viineet Kumar Singh</li>
+        </ul>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quote">
+        <h2>Favorite Quote</h2>
+        <p><em>“Strength is born from struggle.”</em></p>
+    </section>
+
+    <!-- Aside -->
+    <aside>
+        IMDb Rating:  7.3.
+ <br>
+        Release Date: February 14, 2025, 
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        Produced by: <span>Maddock Films Productions.</span>
+    </footer>
+
+</body>
+</html>
