@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Photos</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+body {
+
+    background: #444;
+    color: white;
+    text-align: center;
+}
+
+#photo-heading{
+    
+	text-transform: uppercase;
+
+}
+
+#animal-photos {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+	
+}
+
+#animal-photos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h1 id="photo-heading">Animal Photos</h1>
+
+<div id="animal-photos">
+    <img src="https://imgs.search.brave.com/GThZ0g9Ewh-sH9_4wepsyn_qqI7JaCq6pRSTUPUEk2A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2VjLzAx/LzIxL2VjMDEyMTQz/OGFjYWUyZTcxNmYz/MWUwMWFjODNmMjM1/LmpwZw" alt="Camel">
+    <img src="https://imgs.search.brave.com/r7cDXbONZXeVcgQJ8adOLZrvrazqEJPPVXJIIrtjLB0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cHVnZHVuZGVlc2Fm/YXJpcy5jb20vYmxv/Zy93cC1jb250ZW50/L3VwbG9hZHMvMjAy/My8wNS9jaGVldGFo/LmpwZw" alt="Cheetah">
+    <img src="https://imgs.search.brave.com/EnHL8eA1ynAlWb80FY9FHxIG09hrU0y1Hol8hU6bJP8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2NjE4NjE3/MjY0NjEtZDYyYjlh/YzJjYjc3P2ZtPWpw/ZyZxPTYwJnc9MzAw/MCZpeGxpYj1yYi00/LjEuMCZpeGlkPU0z/d3hNakEzZkRCOE1I/eHpaV0Z5WTJoOE9Y/eDhaV3hsY0doaGJu/UnpmR1Z1ZkRCOGZE/QjhmSHd3" alt="Elephants">
+    <img src="https://imgs.search.brave.com/qAe4WF33CQSM4cack63JVcE7RXbpclciuLTOLLsdE-o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdDIu/ZGVwb3NpdHBob3Rv/cy5jb20vNDIwMTUy/OS8xMDc5OS9pLzQ1/MC9kZXBvc2l0cGhv/dG9zXzEwNzk5NjA1/NC1zdG9jay1waG90/by1iYWJ5LWdvcmls/bGEtaW4tbW90aGVy/cy1oYW5kcy5qcGc" alt="Gorilla">
+    <img src="https://imgs.search.brave.com/U2Cw0ze6So8SIxl1fpJTxKznOvDO4ZRZFgp8NcdkDNI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNDAvMTk0MC0w/MDQtMjcwODFGMEYv/S29hbGEuanBn" alt="Koala">
+    <img src="https://imgs.search.brave.com/ZipAKgrDCbmfKjuDwUctZA9RTAktyl8O0CVs4mgJ28o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTQv/Mzc4LzI4MS9zbWFs/bC9mZW1hbGUtbGlv/bi1jdWItcG9ydHJh/aXQtYXQtc3Vuc2V0/LXBob3RvLmpwZw" alt="Lion">
+    <img src="https://imgs.search.brave.com/Ebx0zqkshUW6LxMPwni61gCiFg2sHdh-4ymuGTr8u4o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8x/MS8wOC8xOC80Ny9u/YXR1cmFsLTEwMzQw/OTlfNjQwLmpwZw" alt="Polar Bear">
+    <img src="https://media.gettyimages.com/id/949472768/photo/tiger-portrait.jpg?s=612x612&w=0&k=20&c=cPI-hIwXxLwRYcGW3HaC_3C6J_MMIE_BbMjI9Ac0XNE=" alt="Tigers">
+    <img src="https://imgs.search.brave.com/r4CaBUQubUtR-olz9p0wYPqRqszQjo0--BiHpdIKr8Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTY2/MTE4MzkyL3Bob3Rv/L2xvdXAtZ3Jpcy1n/cmV5LXdvbGYuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPW5U/c09BRkhnVXB4dUpO/ZjlkRHZabDcwLWFP/MUQxMDZJV1JJNEtn/YXItODQ9" alt="Wolves">
+</div>
+
+</body>
+</html>
