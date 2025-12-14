@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Facebook Login</title>
+<style>
+body {
+  background-color:#f6f6f6;
+  display:flex;
+  justify-content:center;
+  align-items:center;	
+}
+
+.left {
+  width:450px;
+  margin-top:70px;
+  display:inline-block;
+}
+
+img {
+  margin-left:100px;
+}
+
+.right {
+  display:flex;
+  width:300px;
+  background-color:white;
+  padding:20px;
+  border-radius:5px;
+  box-shadow:0 0 10px #ccc;
+  flex-direction:column;
+  gap:10px;
+}
+
+.submit {
+  background-color:#1877f2;
+  border-radius:5px;
+  padding:10px 20px;
+  color:white;
+  border:none;
+}
+
+.signup {
+  background-color:#42b72a;
+  padding:10px 20px;
+  color:white;
+  border-radius:5px;
+  border:none;
+}
+
+input {
+  padding:10px 20px;
+  border-radius:5px;
+  border:1px solid #f5e7e6;
+}
+
+.para {
+  color:#1877f2;
+  text-decoration:none;
+}
+
+</style>
+  </head>
+  <body>
+
+    <div class="left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKYmBc3E7ztL3FwPPn8kC1JDw0kMjGyPoJA&s" alt="Facebook logo">
+      <p>Facebook helps you connect and share with the people in your life.</p>
+    </div>
+
+    <div class="right">
+      <form>
+        <input type="text" id="email" placeholder="Email address or phone number"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+
+        <button type="submit" class="submit">Log in</button>
+<br>
+        <a href="#" class="para">Forgotten account?</a>
+<br>
+        <button class="signup">Create new account</button>
+      </form>
+    </div>
+
+  </body>
+</html>
