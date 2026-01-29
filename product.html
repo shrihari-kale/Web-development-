@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body{
+            font-family: arial;
+            background: #f1f3f6;
+        }
+        .box{
+            background: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .price{
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button{
+            background: #ff9f00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2 class="name"></h2>
+        <p id="price" class="price"></p>
+        <button>Buy Now</button>
+    </div>
+    
+    <script>
+         const id = new URLSearchParams(window.location.search).get("id");
+
+        if(id == 1){
+            name.innerText = "Mobile"
+            price.innerText = "₹19,000"
+        }
+
+        if(id == 2){
+            name.innerText = "Shoes"
+            price.innerText = "₹2,000"
+        }
+
+        if(id == 3){
+            name.innerText = "Watch"
+            price.innerText = "₹5,000"
+        }
+
+        if(id == 4){
+            name.innerText = "Laptop"
+            price.innerText = "₹40,000"
+        }
+    </script>
+</body>
+</html>
