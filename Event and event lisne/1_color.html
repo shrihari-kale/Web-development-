@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            font-family: gilroy;
+        }
+
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            background-color: #222;
+            }
+            h1{
+                color:#555;
+                font-size: 5rem;
+                font-weight: 300;
+
+            }
+    </style>
+</head>
+<body>
+    
+    <h2>SHRIHARI KALE</h2>
+    
+    <input type="text" placeholder="Enter Name">
+    
+    <!-- change event -->
+
+    <h3>Select your device</h3>
+    <select>
+        <option selected disabled>Choose Your Device</option>
+        <option value="samsung">Samsung</option>
+        <option value="Vivo">Vivo</option>
+        <option value="Oppo">Oppo</option>
+        <option value="Apple">Apple</option>
+    </select>
+<br><br><br>
+
+    <div id="main">
+        <h1>2</h1>
+    </div>
+
+    <script>
+        let heading = document.querySelector("h1");
+
+     //heading.addEventListener("click", function(){
+      heading.addEventListener("dblclick", function(){   
+            heading.style.color="red";
+        });
+
+        let inp = document.querySelector("input");
+        inp.addEventListener("input", function (detail){
+            if(detail.data !== null){
+
+                 console.log(detail.data);
+            }
+           
+        });
+
+
+        // change event
+
+        let h3=document.querySelector("h3");
+        let option=document.querySelector("select");
+
+        option.addEventListener("change", function (dets){   // dets : details provide karta he option ki
+      //  console.dir(option);
+            h3.innerText=`${dets.target.value} Device Selected`;
+        });
+           
+
+        let h1 = document.querySelector("h1");
+        window.addEventListener("keydown", function (dets){
+            //h1.textContent = dets.key;
+           if(dets.key === " "){
+            h1.textContent = "Space";
+           }else{
+            h1.textContent = dets.key;
+           }
+        });
+
+    </script>
+</body>
+</html>

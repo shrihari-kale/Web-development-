@@ -1,0 +1,9 @@
+.container{
+  
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+  width: 200px;
+  border-radius: 10px;
+  text-align: center;
+}

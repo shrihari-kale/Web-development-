@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <h1>Shrihari Kale</h1>   
+<button>Click</button>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, explicabo minus. Quod a voluptate unde quam illum culpa quaerat vitae, nemo labore et eveniet natus accusantium earum vel? Ipsum, sunt!
+</p>
+
+
+<div id="box">Hello World</div>
+<button id="btns">Show / Hide</button>
+
+
+    <script>
+     let h1=document.querySelector("h1");
+      let btn=document.querySelector("button");
+      let p = document.querySelector("p");
+      p.style.color="red";
+
+     btn.addEventListener("click", function(){
+        h1.innerText="Shrihari Kale Patil";
+        alert("name is change");
+     })
+
+        let div = document.getElementById("box");
+        let btns = document.getElementById("btns");
+
+        btns.addEventListener("click", function(){
+            if(div.style.display === "none"){
+                div.style.display = "block";
+            }else{
+                div.style.display = "none";
+            }
+        })
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 250px;
+            width: 250px;
+            border: solid 1px black;
+        }
+    </style>
+
+</head>
+<body>
+    <div> </div>
+    <input type="text" placeholder="enter">
+
+    <script>
+      let div = document.querySelector("div");
+      let inp = document.querySelector("input");
+      
+      inp.addEventListener("keydown", function (){
+        let value = inp.value;
+       div.textContent=value;
+      });
+    </script>
+</body>
+</html>
