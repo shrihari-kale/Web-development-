@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Button click करने पर counter increase करो (0 → 1 → 2) -->
+    <h2 id="count">0</h2>
+    <button id="btn2">-</button>
+    <button id="btn">+</button>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, corporis ea. Ipsa eos, iusto ratione aut suscipit exercitationem quod inventore accusantium mollitia incidunt earum, doloribus quo vero consequuntur sit tempora.</p>
+    <button id="btn3">delete</button>
+    <script>
+
+    // Button click करने पर counter increase करो(0 → 1 → 2)
+    let count = 0;
+
+    let btn = document.querySelector("#btn");
+    let btn2= document.querySelector("#btn2");
+    let display = document.querySelector("#count");
+    
+
+     btn.addEventListener("click", function () {
+        count = count + 1;
+        display.textContent = count;
+    });
+      btn2.addEventListener("click", function () {
+            count = count - 1;
+            display.textContent = count;
+        });
+
+
+     let btn3=document.getElementById("btn3");
+     let para=document.getElementById("para");
+
+     btn3.addEventListener("click", function(){
+        para.remove();
+    });
+
+    </script>
+</body>
+</html>

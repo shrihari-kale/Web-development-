@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lt{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+       <li>Apple</li>
+       <li>Banana</li>
+       <li>Mango</li>
+       <li>Grapes</li>
+    </ul>
+
+
+     <script>
+ 
+ let ul= document.querySelector("ul");
+ ul.addEventListener("click",function(dets){
+    // console.log(dets.target); only check
+    //dets.target.style.textDecoration = "line-through";
+    dets.target.classList.toggle("lt");
+ });
+ 
+
+
+     </script>
+</body>
+</html>
+
+
+
+
+
+  

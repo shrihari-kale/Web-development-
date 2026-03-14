@@ -5,17 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+           padding: 10px;
+        }
         div{
             height: 250px;
             width: 250px;
             border: solid 1px black;
         }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 7px;
+        }
     </style>
 
 </head>
 <body>
+
     <div> </div>
     <input type="text" placeholder="enter">
+
+  <!-- add to card    -->
+  <ul>
+    <li></li>
+  </ul>
+  <button>Add to list</button>
+<br><br>
+<!-- Button click करने पर image change करो -->
+   
+   <img src="https://i.pinimg.com/1200x/8d/87/02/8d8702c3a0cc8ec2ef971574438158c8.jpg">
+   <button id="btns"> Change img </button>
+  
+
+
+
+
+
 
     <script>
       let div = document.querySelector("div");
@@ -25,6 +51,31 @@
         let value = inp.value;
        div.textContent=value;
       });
+
+
+      // add to card
+      let ul=document.querySelector("li");
+      let btn= document.querySelector("button");
+
+      btn.addEventListener("click",function(){
+        let li = document.createElement("li");
+
+        li.textContent = "New Item";
+        ul.appendChild(li);
+      });
+
+
+      let btns=document.getElementById("btns");
+      let img = document.querySelector("img");
+
+      btns.addEventListener("click",function(){
+          img.src = "https://i.pinimg.com/736x/96/6a/b8/966ab8d2e8f3d000f96fefadd3fee420.jpg";
+        //   img.src = "https://i.pinimg.com/736x/2c/cf/93/2ccf933da4e0d2813031f5333d92dbca.jpg";
+      });
+
+
+
+    
     </script>
 </body>
 </html>
