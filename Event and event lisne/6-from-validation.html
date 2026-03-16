@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <input id="name" type="text" placeholder="Name">
+    <div id="hide">
+        <br>
+        <small>your name should be greater than 2 characters</small>
+    </div>
+    <br><br>
+    <input type="email" placeholder="email">
+    <br><br>
+    <input type="password" placeholder="password">
+    <br><br>
+    <select>
+        <option value="male">male</option>
+        <option value="male">female</option>
+        <option value="male">others</option>
+    </select>
+    <br><br>
+    <textarea placeholder="Tell us about you..."></textarea>
+    <br><br>
+    <input type="submit">
+    </form>
+   
+    <!-- <input pattern="[a-z]{3,8}" type="text" placeholder="name"> -->
+  <script>
+     
+    let nm= document.querySelector("#name");
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", function (dets){
+        dets.preventDefault (); //ye function form ko load nahi hone deta he
+
+        if(nm.value.length <= 2){
+         document.querySelector("#hide").style.display = "initial";
+        }else{
+            document.querySelector("#hide").style.display ="none";
+        }
+    });
+
+
+    </script>
+</body>
+</html>

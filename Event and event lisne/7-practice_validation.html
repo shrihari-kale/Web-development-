@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Email Password Validator</title>
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f0f2f5;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    width:320px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+}
+
+input{
+    width:100%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+.error{
+    color:red;
+    font-size:13px;
+}
+#resultMessage{
+    color:red;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Login Form</h2>
+
+        <form autocomplete="off" id="form">
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <small class="error" id="passwordError"></small>
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <div id="resultMessage">
+          There are errors.
+        </div>
+
+    </div>
+
+    <script>
+      let email = document.querySelector("#email");
+      let password = document.querySelector("#password");
+      let form = document.querySelector("form");
+      
+      form.addEventListener("submit", function (dets){
+        dets.preventDefault();
+
+        let emailRegex = /^[^\s@]d+@[^\s@]+\.[^\s@]+$/;
+        let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
+
+         
+      });
+    </script>
+
+</body>
+ 
+</html>

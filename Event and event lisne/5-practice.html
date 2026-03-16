@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- practice qu: live character counter -->
+
+  <input type="text" placeholder="write anything">
+  <h1>Total Characters : <span>0</span></h1>
+
+<script>
+    //-- practice qu: live character counter 
+    let inp = document.querySelector("input");
+    let span =document.querySelector("span");
+
+
+    inp.addEventListener("input", function (){
+       // console.log(inp.value.length);
+    span.textContent = inp.value.length;   
+    });
+
+</script>
+</body>
+</html>

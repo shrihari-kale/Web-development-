@@ -2,30 +2,49 @@ import React from 'react'
 
 const App = () => {
 
-  function btnClick(){
-    console.log("button is clicked");
+  function btnClicked(){
+    console.log('button is clicked');
   }
 
-  function inputChanging(value){
-    console.log(value);
+  function inputChanging(elem){
+   console.log(elem.target.value);
   }
+
 
   return (
     <div>
-      <h1>Hello, shrihari</h1>
-      {/* <button onClick={btnClick}>Change user</button> */}  
-       <button onClick={() =>{console.log("button click")}}>Click here</button>
+      <button onClick={btnClicked}>first tareeka</button>
 
-       <input onChange={function(elem){inputChanging(elem.target.value)}}
-       type='text' placeholder='Enter Name'/>
+      <button
+        onDoubleClick={() => {
+          console.log("second Tarika");
+        }}
+      >
+        second tareeka
+      </button>
 
-       <div className='box'
-       onMouseMove={(elem) => {
-        console.log(elem.clientY);
-       }}> 
-       </div>
+      <input onChange={inputChanging} type="text" placeholder="Enter Name" />
+
+      <div
+        onMouseMove={(elem) => {
+          // jo elem he information deta he event ki
+          console.log(elem.clientX);
+          console.log("mouse move on");
+        }}
+        className="box"
+      ></div>
+
+
+      <div onWheel={()=>{
+         console.log('srcoll on');
+      }}>
+        <div className="page1"></div>
+        <div className="page2"></div>
+        <div className="page3"></div>
+      </div>
+
     </div>
-  )
+  );
 }
 
 export default App

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <input type="text" placeholder="Enter Task">
+    <button class="btn">Add Task</button>
+    <ol>
+       
+    </ol>
+    
+
+    <script>
+        
+        let btn=document.querySelector(".btn");
+        let ul = document.querySelector("ol");
+        let inp = document.querySelector("input");
+
+        btn.addEventListener("click", function(elme){
+
+            let value = inp.value;
+
+            let list = document.createElement("li");
+
+            list.textContent=value;
+            ul.append(list);
+        })
+    </script>
+</body>
+</html>

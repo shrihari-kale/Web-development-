@@ -3,3 +3,18 @@
   width: 250px;
   background-color: rosybrown;
 }
+.page1{
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
+}
+.page2{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(232, 161, 73);
+}
+.page3{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(205, 115, 5);
+}
