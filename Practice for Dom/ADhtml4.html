@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .box{
+        height: 250px;
+        width: 250px;
+        border: 1px solid;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    <h3>Color Change</h3>
+    <h2 class="colorcode">RGB Code:</h2>
+    <div class="box">
+
+    </div><br>
+    <button class="btn">Click here</button>
+
+
+    <script>
+        let btn=document.querySelector(".btn");
+        let box=document.querySelector(".box");
+        let code=document.querySelector(".colorcode");
+        btn.addEventListener("click", function (event) {
+
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+                
+               let color = `rgb(${r}, ${g}, ${b})`;
+
+                box.style.backgroundColor= color;
+
+                code.textContent = "RGB Code:"+color;
+            });
+    </script>
+</body>
+</html>
