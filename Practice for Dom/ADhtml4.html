@@ -11,33 +11,64 @@
         border: 1px solid;
         border-radius: 5px;
        }
+       body{
+        background-color: white;
+        color: black;
+       }
+       .dark{
+        background-color: black;
+        color:white;
+       }
     </style>
 </head>
 <body>
-    <h3>Color Change</h3>
+    <!-- <h3>Color Change</h3>
     <h2 class="colorcode">RGB Code:</h2>
     <div class="box">
 
     </div><br>
     <button class="btn">Click here</button>
-
+ -->
+<!-- <p>0</p>
+ <input type="text" placeholder="enter"> -->
+  
+<button class="btn">Dark Mode</button>
+<h1>Hello</h1>
+<P>This is dark mode practice</P>
 
     <script>
-        let btn=document.querySelector(".btn");
-        let box=document.querySelector(".box");
-        let code=document.querySelector(".colorcode");
-        btn.addEventListener("click", function (event) {
+        // let btn=document.querySelector(".btn");  
+        // let box=document.querySelector(".box");
+        // let code=document.querySelector(".colorcode");
+        // btn.addEventListener("click", function (event) {
 
-            let r = Math.floor(Math.random() * 256);
-            let g = Math.floor(Math.random() * 256);
-            let b = Math.floor(Math.random() * 256);
+        //     let r = Math.floor(Math.random() * 256);
+        //     let g = Math.floor(Math.random() * 256);
+        //     let b = Math.floor(Math.random() * 256);
                 
-               let color = `rgb(${r}, ${g}, ${b})`;
+        //        let color = `rgb(${r}, ${g}, ${b})`;
 
-                box.style.backgroundColor= color;
+        //         box.style.backgroundColor= color;
 
-                code.textContent = "RGB Code:"+color;
-            });
-    </script>
+        //         code.textContent = "RGB Code:"+color;
+        //     });
+
+    //  let inp=document.querySelector("input");
+    //  let count=document.querySelector("p");
+
+    //  inp.addEventListener("input", function(elme){
+    //    // console.log(elme.key.length);
+    //     //let length = inp.value.length;
+
+    //      count.textContent = inp.value.length;
+    // })
+ 
+    let btn=document.querySelector(".btn");
+
+    btn.addEventListener("click", function(){
+
+        document.body.classList.toggle("dark");
+    })
+</script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+             border: 2px solid black;
+             width: 250px;
+             height: 250px;
+        }
+        button{
+            padding: 10px;
+            margin-top: 100px;
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+
+    <div>
+    <button class="btn">inc</button>
+    <button class="btn2">dec</button>
+    </div>
+    <script>
+        let box=document.querySelector(".box");
+        let btn2=document.querySelector(".btn2");
+        let btn=document.querySelector(".btn");
+        
+        let size=100;
+
+       btn.addEventListener("click", function () {
+            
+            size = size + 20;
+            box.style.width = size + "px";
+            box.style.height = size + "px";
+        });
+        
+        btn2.addEventListener("click", function () {
+
+                size = size - 20;
+                box.style.width = size + "px";
+                box.style.height = size + "px";
+            });
+
+        
+
+    </script>
+</body>
+</html>
